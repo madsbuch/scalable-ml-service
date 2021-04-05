@@ -1,0 +1,433 @@
+2021-04-05 09:37:52.729 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 09:37:52.731 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 09:37:52.735 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 09:37:52.735 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 09:37:52.740 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 09:37:52.757 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 09:37:52.762 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 09:37:52.763 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 09:37:52.765 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 09:37:52.777 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 09:37:52.777 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 09:37:52.784 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 09:37:52.785 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 09:37:52.785 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 09:37:52.788 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 09:37:52.791 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 09:37:52.796 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 09:37:52.804 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 09:37:52.808 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 09:37:52.809 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 09:37:52.812 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 09:37:52.818 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 09:37:52.820 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 09:37:52.822 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 09:37:52.823 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 09:37:52.824 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 09:37:52.826 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 09:37:52.827 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 09:37:52.831 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 09:37:52.832 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 09:37:52.836 [error] <0.1162.0> CRASH REPORT Process <0.1162.0> with 0 neighbours exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Broadway was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :permanent,\n      ...">>} in 'Elixir.Supervisor':init_child/1 line 631 in application_master:init/4 line 138
+2021-04-05 09:37:55.401 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 09:37:55.403 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 09:37:55.408 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 09:37:55.409 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 09:37:55.414 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 09:37:55.423 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 09:37:55.425 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 09:37:55.427 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 09:37:55.428 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 09:37:55.437 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 09:37:55.437 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 09:37:55.442 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 09:37:55.444 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 09:37:55.444 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 09:37:55.447 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 09:37:55.449 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 09:37:55.453 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 09:37:55.460 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 09:37:55.464 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 09:37:55.465 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 09:37:55.468 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 09:37:55.474 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 09:37:55.476 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 09:37:55.477 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 09:37:55.478 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 09:37:55.479 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 09:37:55.480 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 09:37:55.482 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 09:37:55.484 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 09:37:55.486 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 09:37:55.494 [error] <0.449.0> CRASH REPORT Process <0.449.0> with 0 neighbours exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Broadway was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :permanent,\n      ...">>} in 'Elixir.Supervisor':init_child/1 line 631 in application_master:init/4 line 138
+2021-04-05 09:38:14.563 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 09:38:14.565 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 09:38:14.571 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 09:38:14.573 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 09:38:14.578 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 09:38:14.588 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 09:38:14.591 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 09:38:14.592 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 09:38:14.594 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 09:38:14.605 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 09:38:14.605 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 09:38:14.611 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 09:38:14.613 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 09:38:14.613 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 09:38:14.617 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 09:38:14.619 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 09:38:14.624 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 09:38:14.630 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 09:38:14.635 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 09:38:14.635 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 09:38:14.639 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 09:38:14.644 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 09:38:14.646 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 09:38:14.648 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 09:38:14.649 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 09:38:14.650 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 09:38:14.652 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 09:38:14.653 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 09:38:14.656 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 09:38:14.657 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 09:38:14.746 [info] <0.44.0> Application api_server started on node nonode@nohost
+2021-04-05 09:38:35.271 [error] <0.635.0> CRASH REPORT Process <0.635.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.MatchError',term => {error,econnrefused}},[{'Elixir.ApiServerWeb.TranslationRPC',call,1,[{file,"lib/api_server_web/translations_rpc.ex"},{line,9}]},{'Elixir.ApiServerWeb.Resolvers.Translation',translate,3,[{file,"lib/api_server_web/resolvers/translation.ex"},{line,3}]},{'Elixir.Absinthe.Resolution',call,2,[{file,"lib/absinthe/resolution.ex"},{line,209}]},{'Elixir.Absinthe.Phase.Document.Execution.Resolution',reduce_resolution,1,[{file,...},...]},...]},...},...},...}
+2021-04-05 09:38:35.274 [error] <0.635.0> Cowboy stream 5 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.624.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.MatchError',term => {error,econnrefused}},[{'Elixir.ApiServerWeb.TranslationRPC',call,1,[{file,"lib/api_server_web/translations_rpc.ex"},{line,9}]},{'Elixir.ApiServerWeb.Resolvers.Translation',translate,3,[{file,"lib/api_server_web/resolvers/translation.ex"},{line,3}]},{'Elixir.Absinthe.Resolution',call,2,[{file,"lib/absinthe/resolution.ex"},{line,209}]},{'Elixir.Absinthe.Phase.Document.Execution.Resolution',reduce_resolution,1,[{file,"..."},...]},...]},...},...}
+2021-04-05 09:41:56.483 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 09:41:56.486 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 09:41:56.490 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 09:41:56.492 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 09:41:56.496 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 09:41:56.504 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 09:41:56.507 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 09:41:56.508 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 09:41:56.510 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 09:41:56.519 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 09:41:56.519 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 09:41:56.525 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 09:41:56.526 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 09:41:56.526 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 09:41:56.529 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 09:41:56.531 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 09:41:56.535 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 09:41:56.541 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 09:41:56.545 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 09:41:56.546 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 09:41:56.549 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 09:41:56.553 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 09:41:56.555 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 09:41:56.556 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 09:41:56.557 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 09:41:56.558 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 09:41:56.559 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 09:41:56.560 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 09:41:56.563 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 09:41:56.564 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 09:41:56.639 [info] <0.44.0> Application api_server started on node nonode@nohost
+2021-04-05 09:42:40.426 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 09:42:40.428 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 09:42:40.434 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 09:42:40.436 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 09:42:40.442 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 09:42:40.451 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 09:42:40.455 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 09:42:40.457 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 09:42:40.458 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 09:42:40.468 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 09:42:40.468 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 09:42:40.474 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 09:42:40.475 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 09:42:40.475 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 09:42:40.479 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 09:42:40.481 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 09:42:40.485 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 09:42:40.491 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 09:42:40.496 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 09:42:40.496 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 09:42:40.499 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 09:42:40.504 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 09:42:40.505 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 09:42:40.507 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 09:42:40.508 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 09:42:40.508 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 09:42:40.510 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 09:42:40.511 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 09:42:40.513 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 09:42:40.515 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 09:42:40.587 [info] <0.44.0> Application api_server started on node nonode@nohost
+2021-04-05 09:55:31.909 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 09:55:31.911 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 09:55:31.917 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 09:55:31.918 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 09:55:31.923 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 09:55:31.930 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 09:55:31.934 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 09:55:31.935 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 09:55:31.936 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 09:55:31.949 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 09:55:31.949 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 09:55:31.954 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 09:55:31.955 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 09:55:31.955 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 09:55:31.959 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 09:55:31.962 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 09:55:31.966 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 09:55:31.972 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 09:55:31.977 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 09:55:31.978 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 09:55:31.981 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 09:55:31.987 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 09:55:31.989 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 09:55:31.990 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 09:55:31.991 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 09:55:31.992 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 09:55:31.994 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 09:55:31.995 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 09:55:31.997 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 09:55:31.998 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 09:55:32.071 [info] <0.44.0> Application api_server started on node nonode@nohost
+2021-04-05 09:56:45.188 [error] <0.652.0> CRASH REPORT Process <0.652.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: :ok}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok, ...">>},...},...},...},...}
+2021-04-05 09:56:45.190 [error] <0.652.0> Cowboy stream 1 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: :ok}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok, an...">>},...},...},...}
+2021-04-05 09:56:54.090 [error] <0.694.0> CRASH REPORT Process <0.694.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:56:54.090 [error] <0.694.0> Cowboy stream 2 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 09:57:20.424 [error] <0.736.0> CRASH REPORT Process <0.736.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:57:20.424 [error] <0.736.0> Cowboy stream 3 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 09:57:21.822 [error] <0.778.0> CRASH REPORT Process <0.778.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:57:21.822 [error] <0.778.0> Cowboy stream 4 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 09:57:34.142 [error] <0.795.0> CRASH REPORT Process <0.795.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:57:34.143 [error] <0.795.0> Cowboy stream 5 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 09:57:38.385 [error] <0.811.0> CRASH REPORT Process <0.811.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:57:38.385 [error] <0.811.0> Cowboy stream 6 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 09:58:00.361 [error] <0.827.0> CRASH REPORT Process <0.827.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:58:00.362 [error] <0.827.0> Cowboy stream 7 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 09:58:01.554 [error] <0.843.0> CRASH REPORT Process <0.843.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:58:01.554 [error] <0.843.0> Cowboy stream 8 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 09:58:03.270 [error] <0.859.0> CRASH REPORT Process <0.859.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:58:03.271 [error] <0.859.0> Cowboy stream 9 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.651.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 09:58:07.659 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 09:58:07.661 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 09:58:07.665 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 09:58:07.667 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 09:58:07.672 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 09:58:07.681 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 09:58:07.684 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 09:58:07.686 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 09:58:07.687 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 09:58:07.701 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 09:58:07.701 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 09:58:07.706 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 09:58:07.707 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 09:58:07.707 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 09:58:07.710 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 09:58:07.712 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 09:58:07.716 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 09:58:07.721 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 09:58:07.725 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 09:58:07.725 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 09:58:07.728 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 09:58:07.733 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 09:58:07.734 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 09:58:07.736 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 09:58:07.737 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 09:58:07.737 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 09:58:07.739 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 09:58:07.740 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 09:58:07.742 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 09:58:07.743 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 09:58:07.812 [info] <0.44.0> Application api_server started on node nonode@nohost
+2021-04-05 09:58:11.123 [error] <0.618.0> CRASH REPORT Process <0.618.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:o...">>},...},...},...},...}
+2021-04-05 09:58:11.125 [error] <0.618.0> Cowboy stream 2 with ranch listener 'Elixir.ApiServerWeb.Endpoint.HTTP' and connection process <0.614.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Absinthe.ExecutionError',message => <<"Invalid value returned from resolver.\n\nResolving field:\n\n    translate\n\nDefined at:\n\n    /home/mads/mygit/scalable-ml-service/api_server/lib/api_server_web/schema.ex:11\n\nResolving on:\n\n    %{}\n\nGot value:\n\n    %{translated_string: \"Lala\"}\n\n...\n\nDid you forget to return a valid `{:ok, any}` | `{:error, error_value}` tuple?\n\n...\n\nThe result must be one of the following...\n\n## For a data result\n\n`{:ok,...">>},...},...},...}
+2021-04-05 10:01:26.716 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 10:01:26.717 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 10:01:26.721 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 10:01:26.723 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 10:01:26.728 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 10:01:26.736 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 10:01:26.739 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 10:01:26.740 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 10:01:26.741 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 10:01:26.751 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 10:01:26.751 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 10:01:26.756 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 10:01:26.757 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 10:01:26.757 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 10:01:26.761 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 10:01:26.763 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 10:01:26.766 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 10:01:26.772 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 10:01:26.776 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 10:01:26.777 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 10:01:26.780 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 10:01:26.785 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 10:01:26.787 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 10:01:26.788 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 10:01:26.789 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 10:01:26.790 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 10:01:26.791 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 10:01:26.793 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 10:01:26.795 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 10:01:26.796 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 10:01:26.874 [info] <0.44.0> Application api_server started on node nonode@nohost
+2021-04-05 10:02:10.924 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 10:02:10.927 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 10:02:10.935 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 10:02:10.937 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 10:02:10.946 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 10:02:10.962 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 10:02:10.965 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 10:02:10.967 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 10:02:10.968 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 10:02:10.983 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 10:02:10.983 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 10:02:10.990 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 10:02:10.992 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 10:02:10.992 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 10:02:10.996 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 10:02:10.999 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 10:02:11.006 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 10:02:11.015 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 10:02:11.021 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 10:02:11.022 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 10:02:11.027 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 10:02:11.035 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 10:02:11.037 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 10:02:11.039 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 10:02:11.041 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 10:02:11.042 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 10:02:11.044 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 10:02:11.045 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 10:02:11.048 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 10:02:11.050 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 10:02:11.132 [info] <0.44.0> Application api_server started on node nonode@nohost
+2021-04-05 10:03:31.320 [error] <0.656.0> gen_server <0.656.0> terminated with reason: unexpected_delivery_and_no_default_consumer
+2021-04-05 10:03:31.337 [error] <0.656.0> CRASH REPORT Process <0.656.0> with 0 neighbours exited with reason: unexpected_delivery_and_no_default_consumer in gen_server2:terminate/3 line 1183
+2021-04-05 10:03:31.337 [error] <0.655.0> Supervisor {<0.655.0>,amqp_channel_sup} had child gen_consumer started with amqp_gen_consumer:start_link(amqp_selective_consumer, [], {<<"client 127.0.0.1:38491 -> 127.0.0.1:5672">>,1}) at <0.656.0> exit with reason unexpected_delivery_and_no_default_consumer in context child_terminated
+2021-04-05 10:03:31.337 [error] <0.655.0> Supervisor {<0.655.0>,amqp_channel_sup} had child gen_consumer started with amqp_gen_consumer:start_link(amqp_selective_consumer, [], {<<"client 127.0.0.1:38491 -> 127.0.0.1:5672">>,1}) at <0.656.0> exit with reason reached_max_restart_intensity in context shutdown
+2021-04-05 10:04:17.843 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,3,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:17.843 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:17.844 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:20.712 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,4,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:20.712 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:20.712 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:21.771 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,5,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:21.771 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:21.771 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:22.963 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,6,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:22.964 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:22.964 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:25.790 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,7,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:25.790 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:25.790 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:26.328 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,8,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:26.328 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:26.328 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:26.886 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,9,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:26.887 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:26.887 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:27.451 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,10,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:27.451 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:27.451 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:27.886 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,11,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:27.886 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:27.886 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:28.413 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,12,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:28.413 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:28.413 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:40.053 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,13,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.053 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.053 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:40.225 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,14,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.226 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.227 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:40.370 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,15,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.371 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.372 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:40.636 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,16,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.637 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.637 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:40.797 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,17,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.798 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:40.799 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:41.157 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,18,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:41.157 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:41.158 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:41.475 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,19,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:41.476 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:41.477 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:41.931 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,20,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:41.931 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:41.932 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:04:42.280 [info] <0.650.0> Dropping frame {method,'basic.deliver',<<31,97,109,113,46,99,116,97,103,45,98,69,57,110,76,69,50,45,90,48,56,97,83,52,109,79,112,102,95,45,83,119,0,0,0,0,0,0,0,21,0,0,30,97,109,113,46,103,101,110,45,99,78,87,56,85,55,107,75,84,79,76,86,109,53,70,101,106,107,83,45,105,119>>} for invalid or closed channel number 1
+2021-04-05 10:04:42.281 [info] <0.650.0> Dropping frame {content_header,60,0,17,<<48,0,0,0,0,50,14,99,111,114,114,101,108,97,116,105,111,110,95,105,100,83,0,0,0,30,76,84,85,51,78,106,81,50,77,68,99,49,77,106,77,119,77,122,81,121,77,122,77,49,77,119,61,61,61,61,1>>} for invalid or closed channel number 1
+2021-04-05 10:04:42.281 [info] <0.650.0> Dropping frame {content_body,<<"her er resultatet">>} for invalid or closed channel number 1
+2021-04-05 10:07:28.359 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 10:07:28.361 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 10:07:28.366 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 10:07:28.367 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 10:07:28.371 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 10:07:28.380 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 10:07:28.382 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 10:07:28.384 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 10:07:28.385 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 10:07:28.394 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 10:07:28.394 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 10:07:28.400 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 10:07:28.401 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 10:07:28.401 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 10:07:28.404 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 10:07:28.406 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 10:07:28.410 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 10:07:28.415 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 10:07:28.420 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 10:07:28.420 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 10:07:28.423 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 10:07:28.428 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 10:07:28.430 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 10:07:28.431 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 10:07:28.432 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 10:07:28.433 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 10:07:28.434 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 10:07:28.435 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 10:07:28.437 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 10:07:28.438 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 10:07:28.513 [info] <0.44.0> Application api_server started on node nonode@nohost
+2021-04-05 10:08:37.140 [error] <0.630.0> gen_server <0.630.0> terminated with reason: unexpected_delivery_and_no_default_consumer
+2021-04-05 10:08:37.147 [error] <0.630.0> CRASH REPORT Process <0.630.0> with 0 neighbours exited with reason: unexpected_delivery_and_no_default_consumer in gen_server2:terminate/3 line 1183
+2021-04-05 10:08:37.147 [error] <0.629.0> Supervisor {<0.629.0>,amqp_channel_sup} had child gen_consumer started with amqp_gen_consumer:start_link(amqp_selective_consumer, [], {<<"client 127.0.0.1:50285 -> 127.0.0.1:5672">>,1}) at <0.630.0> exit with reason unexpected_delivery_and_no_default_consumer in context child_terminated
+2021-04-05 10:08:37.147 [error] <0.629.0> Supervisor {<0.629.0>,amqp_channel_sup} had child gen_consumer started with amqp_gen_consumer:start_link(amqp_selective_consumer, [], {<<"client 127.0.0.1:50285 -> 127.0.0.1:5672">>,1}) at <0.630.0> exit with reason reached_max_restart_intensity in context shutdown
+2021-04-05 10:12:38.573 [error] <0.1210.0> gen_server <0.1210.0> terminated with reason: unexpected_delivery_and_no_default_consumer
+2021-04-05 10:12:38.573 [error] <0.1210.0> CRASH REPORT Process <0.1210.0> with 0 neighbours exited with reason: unexpected_delivery_and_no_default_consumer in gen_server2:terminate/3 line 1183
+2021-04-05 10:12:38.573 [error] <0.1209.0> Supervisor {<0.1209.0>,amqp_channel_sup} had child gen_consumer started with amqp_gen_consumer:start_link(amqp_selective_consumer, [], {<<"client 127.0.0.1:52803 -> 127.0.0.1:5672">>,1}) at <0.1210.0> exit with reason unexpected_delivery_and_no_default_consumer in context child_terminated
+2021-04-05 10:12:38.573 [error] <0.1209.0> Supervisor {<0.1209.0>,amqp_channel_sup} had child gen_consumer started with amqp_gen_consumer:start_link(amqp_selective_consumer, [], {<<"client 127.0.0.1:52803 -> 127.0.0.1:5672">>,1}) at <0.1210.0> exit with reason reached_max_restart_intensity in context shutdown
+2021-04-05 10:12:38.573 [error] <0.1211.0> gen_server <0.1211.0> terminated with reason: {unexpected_delivery_and_no_default_consumer,{gen_server2,call,[<0.1210.0>,{consumer_call,{'basic.deliver',<<"amq.ctag-Pmb_GyxGiEwuTdv4CV3Rrw">>,1,false,<<>>,<<"amq.gen-u2IZtORB3txAdFHgeGSzbQ">>},{amqp_msg,{'P_basic',undefined,undefined,undefined,undefined,undefined,<<"LTU3NjQ2MDc1MjMwMzQyMTgyMg==">>,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined},<<"lala b'Hej' lala 8">>}},60000]}} in gen_server2:call/3 line 346
+2021-04-05 10:17:04.692 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-04-05 10:17:04.694 [info] <0.44.0> Application nimble_options started on node nonode@nohost
+2021-04-05 10:17:04.699 [info] <0.44.0> Application gen_stage started on node nonode@nohost
+2021-04-05 10:17:04.701 [info] <0.44.0> Application broadway started on node nonode@nohost
+2021-04-05 10:17:04.705 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-04-05 10:17:04.715 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-04-05 10:17:04.718 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-04-05 10:17:04.719 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-04-05 10:17:04.720 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-04-05 10:17:04.731 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-04-05 10:17:04.731 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-04-05 10:17:04.736 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-04-05 10:17:04.737 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-04-05 10:17:04.737 [info] <0.44.0> Application broadway_rabbitmq started on node nonode@nohost
+2021-04-05 10:17:04.740 [info] <0.44.0> Application connection started on node nonode@nohost
+2021-04-05 10:17:04.742 [info] <0.44.0> Application decimal started on node nonode@nohost
+2021-04-05 10:17:04.747 [info] <0.44.0> Application db_connection started on node nonode@nohost
+2021-04-05 10:17:04.754 [info] <0.44.0> Application postgrex started on node nonode@nohost
+2021-04-05 10:17:04.757 [info] <0.44.0> Application ecto started on node nonode@nohost
+2021-04-05 10:17:04.758 [info] <0.44.0> Application ecto_sql started on node nonode@nohost
+2021-04-05 10:17:04.761 [info] <0.44.0> Application cowlib started on node nonode@nohost
+2021-04-05 10:17:04.766 [info] <0.44.0> Application ranch started on node nonode@nohost
+2021-04-05 10:17:04.768 [info] <0.44.0> Application cowboy started on node nonode@nohost
+2021-04-05 10:17:04.769 [info] <0.44.0> Application cowboy_telemetry started on node nonode@nohost
+2021-04-05 10:17:04.770 [info] <0.44.0> Application plug_cowboy started on node nonode@nohost
+2021-04-05 10:17:04.771 [info] <0.44.0> Application absinthe_plug started on node nonode@nohost
+2021-04-05 10:17:04.772 [info] <0.44.0> Application phoenix_html started on node nonode@nohost
+2021-04-05 10:17:04.773 [info] <0.44.0> Application phoenix_live_view started on node nonode@nohost
+2021-04-05 10:17:04.775 [info] <0.44.0> Application phoenix_live_dashboard started on node nonode@nohost
+2021-04-05 10:17:04.776 [info] <0.44.0> Application phoenix_ecto started on node nonode@nohost
+2021-04-05 10:17:04.852 [info] <0.44.0> Application api_server started on node nonode@nohost

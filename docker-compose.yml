@@ -1,0 +1,37 @@
+version: "3.9"
+services:
+  api_service:
+    image: smls-server:latest
+    command: start
+    networks:
+      - smls
+    ports:
+      - "4000:4000"
+  model_runner:
+    image: smls-model-runner:latest
+    restart: always
+    networks:
+      - smls
+    deploy:
+      mode: replicated
+      replicas: 2
+  postgres:
+    image: postgres:13
+    restart: always
+    networks:
+      - smls
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg-volume:/var/lib/postgresql/data
+  rabbitmq:
+    image: rabbitmq:3-management
+    networks:
+      - smls
+volumes:
+  pg-volume:
+
+networks:
+  smls: 
