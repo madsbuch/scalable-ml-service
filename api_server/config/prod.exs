@@ -1,5 +1,8 @@
 use Mix.Config
 
+config :api_server,
+  translations_service: ApiServerWeb.TranslationsService.MessageRPC
+
 # For production, don't forget to configure the url host
 # to something meaningful, Phoenix uses this information
 # when generating URLs.

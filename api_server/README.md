@@ -1,9 +1,13 @@
 # ApiServer
 
+Start a database instance
+
+* `docker run --name postgres -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 postgres:13`
+
 To start your Phoenix server:
 
-  * Setup the project with `mix setup`
-  * Start Phoenix endpoint with `mix phx.server`
+* Setup the project with `mix setup`
+* Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 

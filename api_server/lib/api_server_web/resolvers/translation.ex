@@ -1,10 +1,30 @@
 defmodule ApiServerWeb.Resolvers.Translation do
-  def translate(_parent, %{source_string: source_string}, _resolution) do
-    translation = ApiServerWeb.TranslationRPC.call(source_string)
+  alias ApiServer.Repo
+  alias ApiServer.Schema.SentencePair
 
-    {:ok,
-     %{
-       translated_string: translation
-     }}
+  require OK
+
+  def translate(_parent, %{sentence: sentence}, _resolution) do
+    OK.for do
+      translation <- ApiServerWeb.TranslationsService.call(sentence)
+    after
+      %{
+        translated_string: translation
+      }
+    end
+  end
+
+  def add_string_pair(attrs, _resolution) do
+    OK.for do
+      id = UUID.uuid4()
+
+      SentencePair.changeset(%SentencePair{id: id}, attrs)
+      |> SentencePair.validate()
+      |> Repo.insert()
+    after
+      %{
+        status: "ok"
+      }
+    end
   end
 end

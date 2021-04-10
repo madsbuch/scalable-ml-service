@@ -9,23 +9,46 @@ __Quick start:__
    docker build -t smls-model-runner ./model_runner
    ```
 3. `docker-compose up`
-4. `PGPASSWORD=postgres psql -h localhost -U postgres -c "create database api_server_prod;"`
-5. Navigate to `http://localhost:4000/api/graphiql`
-6. Execute following query:
-    ```
-    query translate {
-      translate (sourceString: "je vais dormir .") {
-        translatedString
-      }
-    }
-    ```
+4. Navigate to `http://localhost:4000/api/graphiql`
+5. Execute following query:
 
-This repository contains example code for a scalable ML service. The use case
-is to build an ML translation service.
+```
+query Translate {
+  translate (sentence: "je vais dormir .") {
+    translatedString
+  }
+}
 
-Thea architecture is bashed on a RabbitMq message broker, an Elixir GraphQl
-server and a Python service that carries out translations. Everything is
-orchestrated by using docker compose.
+mutation AddString {
+  addStringPair(input:{sourceString: "hello", targetString:"hej",sourceLangCode:"en-gb", targetLangCode:"da-dk"}) {
+    status
+  }
+}
+```
+
+
+__The Project:__ The goal is to build a full architecture to gather sentence
+pairs in various languages and run the infrastructure to build the machine
+learned models and provide a translations interface.
+
+The project is purely educational and offers me a change to work with
+
+* Machine learning
+* Scalable architectures
+* Application development
+* Infrastructure development
+* API development
+* Test development
+* Benchmarking a solution
+* Etc.
+
+It will not, however, offer a training ground for general DevOps, the art
+of keeping the uptime near 100%, live migrations, continuous
+integration/deployment etc.
+
+Related blog articles are:
+
+1. [Scalable Machine Learning Service](https://www.madsbuch.com/scalable-ml-service/)
 
 Further things to do as educational tasks:
 
@@ -46,16 +69,16 @@ Further things to do as educational tasks:
   a real life situation we need to handle migration etc. as a part of the
   architecture.
 * __Training:__ Integrate a training pipeline for models based on changes of
-  data.
+  data og changes of the model they are trained on.
 * __Frontend Application:__ Build and embed a frontend application.
 * __Save Predictions:__ Dave the predictions made to "improve service".
 
 
-If you have more ideas the write me and lets have aa talk!
-
 # Resources
+Thanks to the authors behind following resources.
 
-* https://www.rabbitmq.com/tutorials/tutorial-six-elixir.html
-* https://www.rabbitmq.com/tutorials/tutorial-six-python.html
-* https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
-* Internet searches...
+1. https://www.rabbitmq.com/tutorials/tutorial-six-elixir.html
+2. https://www.rabbitmq.com/tutorials/tutorial-six-python.html
+3. https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
+
+And thanks to the entire community making projects like these possible.

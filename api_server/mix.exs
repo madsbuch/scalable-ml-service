@@ -20,7 +20,7 @@ defmodule ApiServer.MixProject do
   def application do
     [
       mod: {ApiServer.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:lager, :logger, :runtime_tools]
     ]
   end
 
@@ -44,8 +44,11 @@ defmodule ApiServer.MixProject do
       {:jason, "~> 1.0"},
       {:broadway_rabbitmq, "~> 0.6.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:absinthe, "~> 1.5.0"},
-      {:absinthe_plug, "~> 1.5.0"}
+      {:uuid, "~> 1.1.8"},
+      {:absinthe, "~> 1.6.3"},
+      {:absinthe_relay, "~> 1.5.1"},
+      {:absinthe_plug, "~> 1.5.7"},
+      {:ok, "~> 1.8.0"}
     ]
   end
 

@@ -1,5 +1,8 @@
 use Mix.Config
 
+config :api_server,
+  translations_service: ApiServerWeb.TranslationsService.IO
+
 # Configure your database
 config :api_server, ApiServer.Repo,
   username: "postgres",

@@ -1,11 +1,30 @@
-defmodule ApiServerWeb.TranslationRPC do
+defmodule ApiServerWeb.TranslationsService do
+  @moduledoc """
+  Interface to the translation service
+  """
+  def call(source), do: Application.get_env(:api_server, :translations_service).call(source)
+end
+
+defmodule ApiServerWeb.TranslationsService.IO do
+  @moduledoc """
+  Mock translations service for testing
+  """
+
+  def call(source) do
+    IO.inspect("EXECUTING TRANSLATION SERVICE")
+
+    {:ok, "The translation of: #{source}"}
+  end
+end
+
+defmodule ApiServerWeb.TranslationsService.MessageRPC do
   @moduledoc """
   We should probably reuse connections here
   """
 
   def wait_for_messages(_channel, correlation_id) do
     receive do
-      {:basic_deliver, payload, %{correlation_id: ^correlation_id}} -> payload
+      {:basic_deliver, payload, %{correlation_id: ^correlation_id}} -> {:ok, payload}
     end
   end
 

@@ -1,5 +1,8 @@
 use Mix.Config
 
+config :api_server,
+  translations_service: ApiServerWeb.TranslationsService.IO
+
 # Configure your database
 #
 # The MIX_TEST_PARTITION environment variable can be used
@@ -10,6 +13,7 @@ config :api_server, ApiServer.Repo,
   password: "postgres",
   database: "api_server_test#{System.get_env("MIX_TEST_PARTITION")}",
   hostname: "localhost",
+  show_sensitive_data_on_connection_error: true,
   pool: Ecto.Adapters.SQL.Sandbox
 
 # We don't run a server during test. If one is required,

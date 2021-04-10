@@ -8,7 +8,8 @@
 use Mix.Config
 
 config :api_server,
-  ecto_repos: [ApiServer.Repo]
+  ecto_repos: [ApiServer.Repo],
+  translations_service: ApiServerWeb.TranslationsService.IO
 
 # Configures the endpoint
 config :api_server, ApiServerWeb.Endpoint,
