@@ -1,5 +1,9 @@
 version: "3.9"
 services:
+  translation_app:
+    image: smls-frontend-app:latest
+    ports:
+      - "3000:3000"
   api_service:
     image: smls-server:latest
     command: start

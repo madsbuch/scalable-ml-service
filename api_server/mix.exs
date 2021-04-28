@@ -48,7 +48,8 @@ defmodule ApiServer.MixProject do
       {:absinthe, "~> 1.6.3"},
       {:absinthe_relay, "~> 1.5.1"},
       {:absinthe_plug, "~> 1.5.7"},
-      {:ok, "~> 1.8.0"}
+      {:ok, "~> 1.8.0"},
+      {:cors_plug, "~> 2.0"}
     ]
   end
 

@@ -1,0 +1,5 @@
+query Translate($sentence: String!) {
+  translate (sentence: $sentence) {
+    translatedString
+  }
+}

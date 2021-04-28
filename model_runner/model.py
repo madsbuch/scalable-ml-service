@@ -1,4 +1,9 @@
 from __future__ import unicode_literals, print_function, division
+import matplotlib.pyplot as plt
+import time
+import numpy as np
+import matplotlib.ticker as ticker
+import math
 from io import open
 import unicodedata
 import string
@@ -15,6 +20,7 @@ device = torch.device("cpu")
 
 SOS_token = 0
 EOS_token = 1
+
 
 class Lang:
     def __init__(self, name):
@@ -118,6 +124,7 @@ def prepareData(lang1, lang2, reverse=False):
 input_lang, output_lang, pairs = prepareData('eng', 'fra', True)
 print(random.choice(pairs))
 
+
 class EncoderRNN(nn.Module):
     def __init__(self, input_size, hidden_size):
         super(EncoderRNN, self).__init__()
@@ -134,6 +141,7 @@ class EncoderRNN(nn.Module):
 
     def initHidden(self):
         return torch.zeros(1, 1, self.hidden_size, device=device)
+
 
 class DecoderRNN(nn.Module):
     def __init__(self, hidden_size, output_size):
@@ -154,6 +162,7 @@ class DecoderRNN(nn.Module):
 
     def initHidden(self):
         return torch.zeros(1, 1, self.hidden_size, device=device)
+
 
 class AttnDecoderRNN(nn.Module):
     def __init__(self, hidden_size, output_size, dropout_p=0.1, max_length=MAX_LENGTH):
@@ -191,6 +200,7 @@ class AttnDecoderRNN(nn.Module):
     def initHidden(self):
         return torch.zeros(1, 1, self.hidden_size, device=device)
 
+
 def indexesFromSentence(lang, sentence):
     return [lang.word2index[word] for word in sentence.split(' ')]
 
@@ -206,6 +216,7 @@ def tensorsFromPair(pair):
     target_tensor = tensorFromSentence(output_lang, pair[1])
     return (input_tensor, target_tensor)
 
+
 teacher_forcing_ratio = 0.5
 
 
@@ -218,7 +229,8 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
     input_length = input_tensor.size(0)
     target_length = target_tensor.size(0)
 
-    encoder_outputs = torch.zeros(max_length, encoder.hidden_size, device=device)
+    encoder_outputs = torch.zeros(
+        max_length, encoder.hidden_size, device=device)
 
     loss = 0
 
@@ -260,9 +272,6 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
 
     return loss.item() / target_length
 
-import time
-import math
-
 
 def asMinutes(s):
     m = math.floor(s / 60)
@@ -276,6 +285,7 @@ def timeSince(since, percent):
     es = s / (percent)
     rs = es - s
     return '%s (- %s)' % (asMinutes(s), asMinutes(rs))
+
 
 def trainIters(encoder, decoder, n_iters, print_every=1000, plot_every=100, learning_rate=0.01):
     start = time.time()
@@ -312,10 +322,8 @@ def trainIters(encoder, decoder, n_iters, print_every=1000, plot_every=100, lear
 
     showPlot(plot_losses)
 
-import matplotlib.pyplot as plt
+
 plt.switch_backend('agg')
-import matplotlib.ticker as ticker
-import numpy as np
 
 
 def showPlot(points):
@@ -326,13 +334,15 @@ def showPlot(points):
     ax.yaxis.set_major_locator(loc)
     plt.plot(points)
 
+
 def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
     with torch.no_grad():
         input_tensor = tensorFromSentence(input_lang, sentence)
         input_length = input_tensor.size()[0]
         encoder_hidden = encoder.initHidden()
 
-        encoder_outputs = torch.zeros(max_length, encoder.hidden_size, device=device)
+        encoder_outputs = torch.zeros(
+            max_length, encoder.hidden_size, device=device)
 
         for ei in range(input_length):
             encoder_output, encoder_hidden = encoder(input_tensor[ei],
@@ -361,6 +371,7 @@ def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
 
         return decoded_words, decoder_attentions[:di + 1]
 
+
 def evaluateRandomly(encoder, decoder, n=10):
     for i in range(n):
         pair = random.choice(pairs)
@@ -371,10 +382,11 @@ def evaluateRandomly(encoder, decoder, n=10):
         print('<', output_sentence)
         print('')
 
+
 hidden_size = 256
 encoder1 = EncoderRNN(input_lang.n_words, hidden_size).to(device)
-attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to(device)
-
+attn_decoder1 = AttnDecoderRNN(
+    hidden_size, output_lang.n_words, dropout_p=0.1).to(device)
 
 
 # trainIters(encoder1, attn_decoder1, 100000, print_every=1000)
@@ -382,14 +394,17 @@ attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).
 # torch.save(attn_decoder1.state_dict(), "./decoder")
 
 
-encoder1.load_state_dict(torch.load("./encoder.pt", map_location=torch.device('cpu')))
-attn_decoder1.load_state_dict(torch.load("./decoder.pt", map_location=torch.device('cpu')))
+encoder1.load_state_dict(torch.load(
+    "./encoder.pt", map_location=torch.device('cpu')))
+attn_decoder1.load_state_dict(torch.load(
+    "./decoder.pt", map_location=torch.device('cpu')))
 
 evaluateRandomly(encoder1, attn_decoder1)
 
 output_words, attentions = evaluate(
     encoder1, attn_decoder1, "je suis trop froid .")
 plt.matshow(attentions.numpy())
+
 
 def showAttention(input_sentence, output_words, attentions):
     # Set up figure with colorbar
@@ -416,6 +431,7 @@ def evaluateAndShowAttention(input_sentence):
     print('input =', input_sentence)
     print('output =', ' '.join(output_words))
     showAttention(input_sentence, output_words, attentions)
+
 
 def translateSentence(input_sentence):
     try:

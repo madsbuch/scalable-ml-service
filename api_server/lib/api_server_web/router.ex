@@ -4,6 +4,7 @@ defmodule ApiServerWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug CORSPlug, origin: "*"
     plug ApplicationWeb.Context
   end
 

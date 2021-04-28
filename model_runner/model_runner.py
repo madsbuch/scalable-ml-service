@@ -3,33 +3,28 @@ import random
 import time
 import model
 
-print("Je vais domir .")
-print(model.translateSentence("je vais dormir ."))
 
 def on_request(ch, method, props, body):
-
-  r = random.randrange(1,1000)
-  response = model.translateSentence(str(body, 'utf-8'))
-  time.sleep(1)
-
-  ch.basic_publish(exchange='',
-                    routing_key=props.reply_to,
-                    properties=pika.BasicProperties(
-                        correlation_id=props.correlation_id),
-                    body=str(response))
-  ch.basic_ack(delivery_tag=method.delivery_tag)
+    r = random.randrange(1, 1000)
+    response = model.translateSentence(str(body, 'utf-8'))
+    ch.basic_publish(exchange='',
+                     routing_key=props.reply_to,
+                     properties=pika.BasicProperties(
+                         correlation_id=props.correlation_id),
+                     body=str(response))
+    ch.basic_ack(delivery_tag=method.delivery_tag)
 
 
 channel = None
 
 while channel == None:
-  try:
-    connection = pika.BlockingConnection(
-        pika.ConnectionParameters(host='rabbitmq'))
-    channel = connection.channel()
-  except:
-    print("Retrying in 1sec")
-    time.sleep(1)
+    try:
+        connection = pika.BlockingConnection(
+            pika.ConnectionParameters(host='rabbitmq'))
+        channel = connection.channel()
+    except:
+        print("Retrying in 1sec")
+        time.sleep(1)
 
 channel.queue_declare(queue='rpc_queue')
 channel.basic_qos(prefetch_count=1)

@@ -7,6 +7,7 @@ __Quick start:__
    ```
    docker build -t smls-server ./api_server
    docker build -t smls-model-runner ./model_runner
+   docker build -t smls-frontend-app ./frontend_app
    ```
 3. `docker-compose up`
 4. Navigate to `http://localhost:4000/api/graphiql`
