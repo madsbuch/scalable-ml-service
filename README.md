@@ -10,22 +10,8 @@ __Quick start:__
    docker build -t smls-frontend-app ./frontend_app
    ```
 3. `docker-compose up`
-4. Navigate to `http://localhost:4000/api/graphiql`
-5. Execute following query:
-
-```
-query Translate {
-  translate (sentence: "je vais dormir .") {
-    translatedString
-  }
-}
-
-mutation AddString {
-  addStringPair(input:{sourceString: "hello", targetString:"hej",sourceLangCode:"en-gb", targetLangCode:"da-dk"}) {
-    status
-  }
-}
-```
+4. Navigate to `http://localhost:3000/api/graphiql`
+5. Start writing french!
 
 
 __The Project:__ The goal is to build a full architecture to gather sentence
@@ -50,11 +36,10 @@ integration/deployment etc.
 Related blog articles are:
 
 1. [Scalable Machine Learning Service](https://www.madsbuch.com/scalable-ml-service/)
+2. [Productizing Machine Learning Models](https://www.madsbuch.com/productizing-ml-models/)
 
 Further things to do as educational tasks:
 
-* __Improve Translator:__ The Python implementation of the translator is sole
-  representative. It needs to be able to parse input properly, etc.
 * __Auto Scaling:__ Currently we statically set the number of instances we run.
   ideally this would be adjusted depending on load.
 * __Asynchronous:__ Currently the GraphQl interface is synchronous. one makes a
@@ -71,7 +56,6 @@ Further things to do as educational tasks:
   architecture.
 * __Training:__ Integrate a training pipeline for models based on changes of
   data og changes of the model they are trained on.
-* __Frontend Application:__ Build and embed a frontend application.
 * __Save Predictions:__ Dave the predictions made to "improve service".
 
 
